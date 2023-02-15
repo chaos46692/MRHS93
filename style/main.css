@@ -1,2 +1,50 @@
 
 
+body {
+    max-width:800px;
+    min-width:600px;
+    margin:auto;
+    border: 1px solid red;
+
+    font-size:large;
+    font-weight:600;
+}
+
+.clear {
+    clear:both;
+}
+
+.pay {
+    clear:both;
+    width:400px;
+}
+
+.rev {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.container {
+    height:12em;
+    border: 1px solid black;
+}
+
+.left {
+    float:left;
+}
+
+h1.pad {
+    padding: 0em 1em;
+}
+
+.vertical-center {
+    /*
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    */
+    vertical-align: middle;
+  }
+
