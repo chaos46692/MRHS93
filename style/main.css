@@ -4,10 +4,10 @@ body {
     max-width:800px;
     min-width:600px;
     margin:auto;
-    border: 1px solid red;
+    border: none; /* 1px solid red; */
 
     font-size:large;
-    font-weight:600;
+    font-weight:400;
 }
 
 .clear {
