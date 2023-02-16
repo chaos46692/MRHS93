@@ -15,8 +15,9 @@ body {
 }
 
 .pay {
-    clear:both;
-    width:400px;
+    float:left;
+    width:390px;
+    padding: 2em 0em;
 }
 
 .rev {
