@@ -28,13 +28,21 @@ body {
     clear:both;
 }
 
-.fillsm::after {
+.filltiny {
+    
+    margin-top:calc(1vh);
+    clear:both;
+}
+
+.fillsm::after, .filltiny::after {
     content: "\00a0\00a0";
 }
 
-.fillsm::before {
+.fillsm::before, .filltiny::after {
     content: "\00a0\00a0";
 }
+
+
 /*
 .fill::after, .fillsm::after {
     content: "\00a0\00a0";
@@ -113,6 +121,10 @@ h1.pad {
     padding: 0em 1em;
 }
 
+#map {
+    max-width: 100%;
+}
+
 .vertical-center {
     /*
     margin: 0;
@@ -128,7 +140,49 @@ h1.pad {
     color: white;
   }
 
+  .down-arrow {
+    position: fixed;
+    bottom:0;
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    color:gray;
 
+ 
+  }
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+
+  @keyframes jumpInfinite {
+    0% {
+      margin-bottom: 20px;
+    }
+    50% {
+      margin-bottom: 0px;
+    }
+    100% {
+      margin-bottom: 20px;
+    }
+  }
+
+  .down-arrow {
+    animation: jumpInfinite 1.5s infinite;
+  }  
+
+/*
   .down-arrow {
     position: absolute;
     top: calc(100vh - 60px);
@@ -167,3 +221,4 @@ h1.pad {
   .down-arrow {
     animation: jumpInfinite 1.5s infinite;
   }
+  */

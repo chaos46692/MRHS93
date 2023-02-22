@@ -12,7 +12,7 @@
     $(".containersm").css('min-height',hlf + 'px')
     $(".fill").css('margin-top',thrd + 'px')
     $(".fillsm").css('margin-top',thrd+ 'px')
-    $(".down-arrow").css('top',arr + 'px')
+    //$(".down-arrow").css('top',arr + 'px')
  }
 
 $( document ).ready(function() {
@@ -25,4 +25,14 @@ $( document ).ready(function() {
           rsz();
         }
       });
+
+      $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+          $('.down-arrow').hide();
+        }
+        else {
+          $('.down-arrow').show();
+        }
+      });
+
 });

@@ -18,7 +18,7 @@ div.container {
 div.containersm {
     padding: 0% 20%;
     clear:both;
-    min-height:calc(50vh);
+    min-height:calc(20vh);
 
 }
 
