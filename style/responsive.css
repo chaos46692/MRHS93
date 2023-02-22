@@ -47,3 +47,16 @@ div.containersm {
     }
 
   }
+
+ @media (pointer:none), (pointer:coarse) {
+    div.container {
+        min-height:600px;
+
+    }
+
+    div.containersm {
+        min-height:calc(300px);
+    
+    }    
+
+}
