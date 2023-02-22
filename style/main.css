@@ -18,15 +18,24 @@ body {
 }
 
 .fill {
-    margin-top:25%;
+    margin-top:calc(30vh);
     clear:both;
 }
 
 .fillsm {
-    margin-top:15%;
+    
+    margin-top:calc(30vh);
     clear:both;
 }
 
+.fillsm::after {
+    content: "\00a0\00a0";
+}
+
+.fillsm::before {
+    content: "\00a0\00a0";
+}
+/*
 .fill::after, .fillsm::after {
     content: "\00a0\00a0";
 }
@@ -34,6 +43,7 @@ body {
 .fill::before, .fillsm::before {
     content: "\00a0\00a0";
 }
+*/
 
 #testing {
     width:100%;

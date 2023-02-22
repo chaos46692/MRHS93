@@ -7,11 +7,19 @@ body {
 div.container {
     padding: 0% 20%;
     clear:both;
+    min-height:calc(100vh);
     /*
     margin:auto;
     border:  1px solid red; 
     width: 100%;
     */
+}
+
+div.containersm {
+    padding: 0% 20%;
+    clear:both;
+    min-height:calc(50vh);
+
 }
 
 
