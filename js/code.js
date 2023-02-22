@@ -21,17 +21,20 @@
     clear:both;
 }
 
+ top: calc(100vh - 60px);
+
  */
  function rsz() {
-    var h = $(window).height();
+    var h = $(window).height() / 2.0;
     var hlf = h / 2.0;
     var thrd = 0.3 * h;
+    var arr = 0.9 * h - 60;
 
     $(".container").css('min-height',h + 'px')
     $(".containersm").css('min-height',hlf + 'px')
     $(".fill").css('margin-top',thrd + 'px')
     $(".fillsm").css('margin-top',thrd+ 'px')
-    $(".down-arrow").css('top',thrd+ 'px')
+    $(".down-arrow").css('top',arr + 'px')
  }
 
 $( document ).ready(function() {
